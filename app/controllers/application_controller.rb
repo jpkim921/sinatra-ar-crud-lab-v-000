@@ -17,6 +17,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts' do
+    @attributes = params
     erb :index
   end
 end
